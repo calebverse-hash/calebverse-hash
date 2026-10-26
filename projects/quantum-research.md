@@ -1,19 +1,24 @@
 # Hybrid PQC–MDN Research
 
-**Role:** Student researcher / experiment implementation  
+**Role:** Student research participant — experiment setup, troubleshooting and result interpretation with guidance  
 **Context:** Faculty-led research with Dr. Ma  
-**Stage:** Research prototype and preliminary evaluation  
-**Tools:** Python, PyTorch, Qiskit, NumPy
+**Stage:** Preliminary research experiment  
+**Software used in the project:** Existing Python research scripts involving PyTorch, Qiskit and NumPy
 
 ## Research question
-Can features from a parameterized quantum circuit (PQC) improve a mixture density network's probabilistic modeling of received power across distance compared with a classical MDN?
 
-## Contributions
-- Set up and debugged a Python/Qiskit research environment and model comparison experiments.
-- Evaluated training and validation negative log-likelihood, estimated probability densities, and overlap-area metrics.
-- Used the target transformation `u = log10(Prx + 2.0)` and accounted for the transformation in original-unit evaluations.
-- Fixed `NaN` overlap-area evaluations by adjusting numerical integration grids.
-- Compared PQC output features between PyTorch and Qiskit and exported evaluation datasets.
+Can features from a parameterized quantum circuit (PQC) improve probabilistic modeling of received power versus distance compared with a classical mixture density network (MDN)?
+
+## My involvement
+
+- Set up the project's Python environment, installed required dependencies and executed existing research code with step-by-step assistance.
+- Worked through errors and numerical issues while running the comparison, including `NaN` overlap-area values.
+- Made guided changes to numerical evaluation settings to obtain usable overlap-area results.
+- Examined training and validation negative log-likelihood, fitted density curves and statistical comparisons.
+- Checked consistency between PyTorch-generated and Qiskit-generated PQC features at sampled distances.
+- Saved experimental results for further discussion with the research team.
+
+**Programming context:** I have hands-on exposure to executing, modifying and troubleshooting research scripts, but I am not representing myself as an independent Python, PyTorch or Qiskit developer, and I did not originate the full research model.
 
 ## Preliminary results
 
@@ -26,6 +31,6 @@ Can features from a parameterized quantum circuit (PQC) improve a mixture densit
 
 Maximum sampled PyTorch–Qiskit feature difference: **2.98 × 10⁻⁷**.
 
-**Interpretation:** Lower NLL is better. Continuous density NLL can be negative. The hybrid did *not* outperform the classical baseline on every metric: at 150 m the classical model estimated the mean more accurately, although the hybrid model estimated variance more accurately.
+**Interpretation:** Lower NLL is better for this comparison; continuous-density NLL can be negative. The hybrid did *not* outperform the classical baseline on every metric. At 150 m, for example, the classical model estimated the mean more accurately while the hybrid estimated variance more accurately.
 
-These are **preliminary results from a specific experiment**, not peer-reviewed evidence of general superiority. Repeated seeds and further baselines are needed. Code/data should be shared only with supervisor approval.
+These are preliminary outputs from a specific run and require more replication and independent validation. Model/code ownership and permission to share datasets should be confirmed with the supervising research team.
