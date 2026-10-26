@@ -4,7 +4,7 @@
 ### Electrical Engineering • Robotics • Computational Research
 
 **Electrical Engineering student at Oral Roberts University**  
-Interested in embedded systems, electrical integration, autonomous robotics, and scientific computing.
+Interested in electrical integration, autonomous robotics, and scientific computing.
 
 [**Explore my engineering portfolio**](https://calebverse-hash.github.io/calebverse-hash/) · [**GitHub profile**](https://github.com/calebverse-hash)
 
